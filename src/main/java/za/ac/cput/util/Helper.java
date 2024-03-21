@@ -8,6 +8,9 @@ public class Helper {
             return true;
         return false;
     }
+    public static boolean isNullOrZero(Integer i) {
+        return i == null || i == 0;
+    }
 
     public static String generateId(){return UUID.randomUUID().toString();
     }
