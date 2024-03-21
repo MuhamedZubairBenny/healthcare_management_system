@@ -1,4 +1,9 @@
 package za.ac.cput.repository;
 
-public interface IDoctorRepository {
+import za.ac.cput.domain.Doctor;
+
+import java.util.List;
+
+public interface IDoctorRepository  extends IRepository <Doctor, String> {
+    List<Doctor> getAll();
 }
