@@ -8,7 +8,6 @@ public class Helper {
             return true;
         return false;
     }
-
     public static String generateId(){return UUID.randomUUID().toString();
     }
 }

@@ -10,8 +10,9 @@ public class Doctor {
     private String doctorEmailAddress;
     private String doctorSpecialization;
 
-    public Doctor() {
+    public Doctor(String doctorId, String doctorFirstName, String doctorLastName, String doctorWorkNumber, String doctorEmailAddress, String doctorSpecialization) {
     }
+
     private Doctor(Builder builder){
         this.doctorId = builder.doctorId;;
         this.doctorFirstName = builder.doctorFirstName;
