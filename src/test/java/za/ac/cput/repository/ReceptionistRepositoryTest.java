@@ -4,7 +4,6 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import za.ac.cput.domain.Doctor;
 import za.ac.cput.domain.Receptionist;
 import za.ac.cput.factory.ReceptionistFactory;
 
