@@ -7,7 +7,7 @@ public class Patient {
     private String name;
     private String gender;
     private int age;
-    private int contactInfo;
+    private String contactInfo;
 
 private Patient(Builder builder) {
     this.patientID = builder.patientID;
@@ -18,7 +18,7 @@ private Patient(Builder builder) {
 
 }
 
-    public Patient(String patientID, String name, String gender, int age, int contactInfo){
+    public Patient(String patientID, String name, String gender, int age, String contactInfo){
 
     }
     public String getPatientID() {
@@ -37,7 +37,7 @@ private Patient(Builder builder) {
         return age;
     }
 
-    public int getContactInfo() {
+    public String getContactInfo() {
         return contactInfo;
     }
 
@@ -69,7 +69,7 @@ private Patient(Builder builder) {
         private String name;
         private String gender;
         private int age;
-        private int contactInfo;
+        private String contactInfo;
         public Builder setPatientID(String patientID){
             this.patientID = patientID;
             return this;
@@ -86,13 +86,22 @@ private Patient(Builder builder) {
             this.age = age;
             return this;
         }
-        public Builder setContactInfo(int contactInfo){
+        public Builder setContactInfo(String contactInfo){
             this.contactInfo = contactInfo;
             return this;
         }
 
         public Patient build() {
-            return null;
+            return new Patient(this);
+        }
+
+        public Builder copy(Patient patient) {
+            this.patientID = patient.patientID;
+            this.name = patient.name;
+            this.gender = patient.gender;
+            this.age = patient.age;
+            this.contactInfo = patient.contactInfo;
+            return this;
         }
     }
 }

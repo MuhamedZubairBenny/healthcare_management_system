@@ -53,5 +53,5 @@ public class PatientRepository implements IPatientRepository {
     }
 
     @Override
-    public List<Patient> getall() {return null;}
+    public List<Patient> getall() {return patientList;}
 }
