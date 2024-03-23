@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
      private Patient patient3;
      @BeforeEach
      void setUp(){
-         patient1 = new Patient("31ST57","Bob","male",40, 0674321532);
-         patient2 = new Patient("53BN94","Swagger","male",35, 0724721646);
+         patient1 = new Patient("31ST57","Bob","male",40, "0674321532");
+         patient2 = new Patient("53BN94","Swagger","male",35, "0724721646");
          patient3 = patient1;
 }
      @Test
@@ -34,7 +34,7 @@ import static org.junit.jupiter.api.Assertions.*;
  @Test
  @Disabled
  @Order(4)
- void testGetPatientId(){assertSame(patient1, patient2);
+ void testGetPatientId(){assertSame(patient1, patient3);
     }
     @Test
     @Order(5)
