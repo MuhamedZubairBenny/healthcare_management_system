@@ -7,7 +7,7 @@ public class Main {
         MedicalRecord record1 = new MedicalRecord.Builder().setRecordID("003")
                 .setDoctorID("6547532")
                 .setPatientID("T85H93")
-                .setDate("12/05/2024")
+                .setDate("13/05/2024")
                 .setDiagnosis("Arrhythmia")
                 .setTreatment("anti-arrhythmic drugs")
                 .build();
