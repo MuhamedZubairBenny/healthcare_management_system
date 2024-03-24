@@ -32,7 +32,7 @@ public class Main {
         MedicalRecord record4 = new MedicalRecord.Builder().setRecordID("006")
                 .setDoctorID("4523652")
                 .setPatientID("P43T36")
-                .setDate("03/06/2024")
+                .setDate("09/06/2024")
                 .setDiagnosis("Diabetes")
                 .setTreatment("Insulin")
                 .build();
