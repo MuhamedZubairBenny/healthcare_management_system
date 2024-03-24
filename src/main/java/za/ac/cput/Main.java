@@ -1,5 +1,6 @@
 package za.ac.cput;
 
+import za.ac.cput.domain.Doctor;
 import za.ac.cput.domain.MedicalRecord;
 
 public class Main {
@@ -20,5 +21,23 @@ public class Main {
                 .setTreatment("NSAIDs or acetaminophen")
                 .build();
         System.out.println(record2.toString());
+        MedicalRecord record3 = new MedicalRecord.Builder().setRecordID("005")
+                .setDoctorID("8756455")
+                .setPatientID("I99D83")
+                .setDate("05/03/2024")
+                .setDiagnosis("Chronic kidney disease")
+                .setTreatment("high blood pressure medication")
+                .build();
+        System.out.println(record3.toString());
+        MedicalRecord record4 = new MedicalRecord.Builder().setRecordID("006")
+                .setDoctorID("4523652")
+                .setPatientID("P43T36")
+                .setDate("03/06/2024")
+                .setDiagnosis("Diabetes")
+                .setTreatment("Insulin")
+                .build();
+        System.out.println(record4.toString());
+
+
     }
 }
