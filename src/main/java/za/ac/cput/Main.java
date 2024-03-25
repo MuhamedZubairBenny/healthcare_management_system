@@ -18,7 +18,7 @@ public class Main {
 
         MedicalRecord record2 = new MedicalRecord.Builder().setRecordID("002")
                 .setDoctorID("8756455")
-                .setPatientID("I99D83")
+                .setPatientID("I99D93")
                 .setDate("05/03/2024")
                 .setDiagnosis("Chronic kidney disease")
                 .setTreatment("high blood pressure medication")
