@@ -2,6 +2,7 @@ package za.ac.cput;
 
 import za.ac.cput.domain.Doctor;
 import za.ac.cput.domain.MedicalRecord;
+import za.ac.cput.factory.DoctorFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +14,8 @@ public class Main {
                 .setTreatment("anti-arrhythmic drugs")
                 .build();
         System.out.println(record1.toString());
-        MedicalRecord record2 = new MedicalRecord.Builder().setRecordID("004")
+
+        /*MedicalRecord record2 = new MedicalRecord.Builder().setRecordID("004")
                 .setDoctorID("7942345")
                 .setPatientID("L94R46")
                 .setDate("01/04/2024")
@@ -36,8 +38,20 @@ public class Main {
                 .setDiagnosis("Diabetes")
                 .setTreatment("Insulin")
                 .build();
-        System.out.println(record4.toString());
+        System.out.println(record4.toString());*/
+        Doctor doctor1 = new Doctor.Builder().setDoctorId("")
+                .setDoctorFirstName("Sharaad")
+                .setDoctorLastName("Singh")
+                .setDoctorWorkNumber("021 591 3722")
+                .setDoctorEmailAddress("singhs@mailwu.com")
+                .setDoctorSpecialization("General-practitioner")
+                .build();
+        System.out.println(doctor1.toString());
 
+        Doctor doctor2 = DoctorFactory.buildDoctor("Duane", "Prins", "021 687 3520", "bigduane@mailwu.com", "Physiotherapist");
+        System.out.println(doctor2.toString());
 
+        Doctor doctor3 = DoctorFactory.buildDoctor("00101","Zubair", "Benny", "021 599 6992", "bennyz@mailwu.com", "General-Practitioner");
+        System.out.println(doctor3.toString());
     }
 }
