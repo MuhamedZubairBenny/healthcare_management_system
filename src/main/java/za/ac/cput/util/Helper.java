@@ -1,6 +1,7 @@
 package za.ac.cput.util;
 
 import java.util.UUID;
+import java.util.Random;
 
 public class Helper {
     public static boolean isNullOrEmpty(String s){
@@ -14,5 +15,9 @@ public class Helper {
     }
 
     public static String generateId(){return UUID.randomUUID().toString();
+    }
+    public static int generateInvoiceNumber() {
+        Random random = new Random();
+        return random.nextInt(10000) + 1;
     }
 }
