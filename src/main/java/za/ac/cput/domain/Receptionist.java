@@ -57,13 +57,12 @@ public class Receptionist {
 
     @Override
     public String toString() {
-        return "Receptionist{" +
-                "receptionistID='" + receptionistID + '\'' +
-                ", receptionistName='" + receptionistName + '\'' +
-                ", receptionistSurname='" + receptionistSurname + '\'' +
-                ", receptionistNo='" + receptionistNo + '\'' +
-                ", receptionistEmail='" + receptionistEmail + '\'' +
-                '}';
+        return "Receptionist" + '\n' +
+                "Receptionist ID = " + receptionistID + '\n' +
+                "Receptionist Name = " + receptionistName + '\n' +
+                "Receptionist Surname = " + receptionistSurname + '\n' +
+                "Receptionist Number = " + receptionistNo + '\n' +
+                "Receptionist Email = " + receptionistEmail + '\n';
     }
 
     public static class Builder{
