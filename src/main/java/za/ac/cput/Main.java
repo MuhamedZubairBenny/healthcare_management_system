@@ -2,8 +2,10 @@ package za.ac.cput;
 
 import za.ac.cput.domain.Doctor;
 import za.ac.cput.domain.MedicalRecord;
+import za.ac.cput.domain.Patient;
 import za.ac.cput.factory.DoctorFactory;
 import za.ac.cput.factory.MedicalRecordFactory;
+import za.ac.cput.factory.PatientFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,5 +47,16 @@ public class Main {
 
         Doctor doctor3 = DoctorFactory.buildDoctor("00101","Zubair", "Benny", "021 599 6992", "bennyz@mailwu.com", "General-Practitioner");
         System.out.println(doctor3.toString());
+
+        Patient patient1 = new Patient.Builder().setPatientID("")
+                .setName("Raaziq").setAge(25).setGender("Male").setContactInfo("0745625770").build();
+        System.out.println(patient1.toString());
+
+        Patient patient2 = PatientFactory.buildPatient("345S1","Suhayl","Male",26,"0632547808");
+        System.out.println(patient2.toString());
+
+        Patient patient3 = PatientFactory.buildPatient("5S42D","Sharaad","Male",23,"0794532121");
+        System.out.println(patient3.toString());
+
     }
 }
