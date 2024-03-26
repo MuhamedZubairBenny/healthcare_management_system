@@ -4,11 +4,12 @@ import za.ac.cput.domain.Doctor;
 import za.ac.cput.domain.MedicalRecord;
 import za.ac.cput.domain.Patient;
 import za.ac.cput.factory.DoctorFactory;
+import za.ac.cput.factory.MedicalRecordFactory;
 import za.ac.cput.factory.PatientFactory;
 
 public class Main {
     public static void main(String[] args) {
-        MedicalRecord record1 = new MedicalRecord.Builder().setRecordID("003")
+        MedicalRecord record1 = new MedicalRecord.Builder().setRecordID("001")
                 .setDoctorID("6547532")
                 .setPatientID("T85H93")
                 .setDate("13/05/2024")
@@ -17,30 +18,21 @@ public class Main {
                 .build();
         System.out.println(record1.toString());
 
-        /*MedicalRecord record2 = new MedicalRecord.Builder().setRecordID("004")
-                .setDoctorID("7942345")
-                .setPatientID("L94R46")
-                .setDate("01/04/2024")
-                .setDiagnosis("Arthritis")
-                .setTreatment("NSAIDs or acetaminophen")
-                .build();
-        System.out.println(record2.toString());
-        MedicalRecord record3 = new MedicalRecord.Builder().setRecordID("005")
+        MedicalRecord record2 = new MedicalRecord.Builder().setRecordID("002")
                 .setDoctorID("8756455")
-                .setPatientID("I99D83")
+                .setPatientID("I99D93")
                 .setDate("05/03/2024")
                 .setDiagnosis("Chronic kidney disease")
                 .setTreatment("high blood pressure medication")
                 .build();
+        System.out.println(record2.toString());
+
+        MedicalRecord record3 = MedicalRecordFactory.buildMedicalRecord("4523652", "P43T36",  "09/06/2024",   "Diabetes" ,"Insulin");
         System.out.println(record3.toString());
-        MedicalRecord record4 = new MedicalRecord.Builder().setRecordID("006")
-                .setDoctorID("4523652")
-                .setPatientID("P43T36")
-                .setDate("09/06/2024")
-                .setDiagnosis("Diabetes")
-                .setTreatment("Insulin")
-                .build();
-        System.out.println(record4.toString());*/
+
+        MedicalRecord record4 = MedicalRecordFactory.buildMedicalRecord("004", "4523652", "P43T36",  "09/06/2024",   "Diabetes" ,"Insulin");
+        System.out.println(record4.toString());
+
         Doctor doctor1 = new Doctor.Builder().setDoctorId("")
                 .setDoctorFirstName("Sharaad")
                 .setDoctorLastName("Singh")
