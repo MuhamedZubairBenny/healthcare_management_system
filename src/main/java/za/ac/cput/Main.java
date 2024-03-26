@@ -2,7 +2,9 @@ package za.ac.cput;
 
 import za.ac.cput.domain.Doctor;
 import za.ac.cput.domain.MedicalRecord;
+import za.ac.cput.domain.Receptionist;
 import za.ac.cput.factory.DoctorFactory;
+import za.ac.cput.factory.ReceptionistFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,5 +55,20 @@ public class Main {
 
         Doctor doctor3 = DoctorFactory.buildDoctor("00101","Zubair", "Benny", "021 599 6992", "bennyz@mailwu.com", "General-Practitioner");
         System.out.println(doctor3.toString());
+
+        Receptionist receptionist1 = new Receptionist.Builder().setReceptionistID("")
+                .setReceptionistName("Blake")
+                .setReceptionistSurname("Reynolds")
+                .setReceptionistNo("021 639 5241")
+                .setReceptionistEmail("blake@reception.co.za")
+                .build();
+        System.out.println(receptionist1.toString());
+
+        Receptionist receptionist2 = ReceptionistFactory.buildReceptionist("John", "Snow", "021 658 3214", "john@reception.co.za");
+        System.out.println(receptionist2.toString());
+
+        Receptionist receptionist3 = ReceptionistFactory.buildReceptionist("03265", "Regina", "Philange", "021 634 9856", "regina@reception.co.za");
+        System.out.println(receptionist3.toString());
+
     }
 }
