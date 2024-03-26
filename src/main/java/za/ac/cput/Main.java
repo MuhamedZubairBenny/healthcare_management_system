@@ -34,7 +34,7 @@ public class Main {
         System.out.println(billing3.toString());
 
         Billing billing4 = BillingFactory.createBilling(4,"P43T36", "15/08/2024", 400.0);
-        System.out.println(billing4.toString());
+        System.out.println(billing4.toString() + "\n");
       
         MedicalRecord record1 = new MedicalRecord.Builder().setRecordID("001")
                 .setDoctorID("6547532")
@@ -58,7 +58,7 @@ public class Main {
         System.out.println(record3.toString());
 
         MedicalRecord record4 = MedicalRecordFactory.buildMedicalRecord("004", "4523652", "P43T36",  "09/06/2024",   "Diabetes" ,"Insulin");
-        System.out.println(record4.toString());
+        System.out.println(record4.toString() + "\n");
 
         Doctor doctor1 = new Doctor.Builder().setDoctorId("")
                 .setDoctorFirstName("Sharaad")
@@ -73,7 +73,7 @@ public class Main {
         System.out.println(doctor2.toString());
 
         Doctor doctor3 = DoctorFactory.buildDoctor("00101","Zubair", "Benny", "021 599 6992", "bennyz@mailwu.com", "General-Practitioner");
-        System.out.println(doctor3.toString());
+        System.out.println(doctor3.toString() + "\n");
 
 
         Receptionist receptionist1 = new Receptionist.Builder().setReceptionistID("")
@@ -88,7 +88,7 @@ public class Main {
         System.out.println(receptionist2.toString());
 
         Receptionist receptionist3 = ReceptionistFactory.buildReceptionist("03265", "Regina", "Philange", "021 634 9856", "regina@reception.co.za");
-        System.out.println(receptionist3.toString());
+        System.out.println(receptionist3.toString() + "\n");
 
         Patient patient1 = new Patient.Builder().setPatientID("")
                 .setName("Raaziq").setAge(25).setGender("Male").setContactInfo("0745625770").build();
