@@ -3,7 +3,7 @@ package za.ac.cput.domain;
 import java.util.Objects;
 
 public class Billing {
-        private int invoiceNumber;
+        public int invoiceNumber;
         private String patientID;
         private String serviceDate;
         private double totalAmount;

@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Objects;
 
 public class MedicalRecord {
-    private String recordID;
+    public String recordID;
     private String patientID;
     private String doctorID;
     private String date;

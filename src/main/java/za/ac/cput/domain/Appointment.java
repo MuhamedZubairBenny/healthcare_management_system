@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Appointment {
     public String appointmentId;
-    public String patientId;
-    public String doctorId;
-    public String appointmentDate;
-    public String appointmentDuration;
+    private String patientId;
+    private String doctorId;
+    private String appointmentDate;
+    private String appointmentDuration;
     public Appointment(){
 
     }
