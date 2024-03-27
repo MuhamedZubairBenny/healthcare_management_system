@@ -1,5 +1,5 @@
 package za.ac.cput.domain;
-
+//Author: Matthew McGregor - 222198559
 import java.util.Objects;
 
 public class Billing {
