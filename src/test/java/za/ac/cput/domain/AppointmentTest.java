@@ -1,6 +1,5 @@
 package za.ac.cput.domain;
-
-// Author: Muhamed Zubair Benny - 220527636
+//Author: Mikaeel Davids - 222590955
 
 import org.junit.jupiter.api.*;
 
