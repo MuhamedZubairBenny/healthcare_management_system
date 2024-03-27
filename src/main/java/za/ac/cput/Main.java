@@ -3,6 +3,7 @@ package za.ac.cput;
 //Author: Duane Prins - 222706333
 // Author: Muhamed Zubair Benny - 220527636
 //Author : Imaan Sadien - 221752838
+// Author: Matthew McGregor - 222198559
 
 import za.ac.cput.domain.*;
 import za.ac.cput.factory.*;
