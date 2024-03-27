@@ -1,5 +1,5 @@
 package za.ac.cput.domain;
-
+//Author: Matthew McGregor - 222198559
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
