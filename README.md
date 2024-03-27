@@ -1,5 +1,7 @@
-UML to insert below
--------------------
+
+![HealthcareUML drawio](https://github.com/ohhsurg/healthcare_management_system/assets/127490167/26a31cc8-d13c-42a9-99b1-d8858af71f30)
+
+
 
 
 
