@@ -1,4 +1,5 @@
 package za.ac.cput.domain;
+//Author: Duane Prins - 222706333
 
 import java.util.Objects;
 

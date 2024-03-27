@@ -1,5 +1,6 @@
-//Author : Imaan Sadien - 221752838
 package za.ac.cput.domain;
+//Author : Imaan Sadien - 221752838
+
 
 import java.util.Objects;
 

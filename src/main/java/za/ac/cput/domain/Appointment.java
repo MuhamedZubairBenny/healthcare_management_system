@@ -1,4 +1,5 @@
 package za.ac.cput.domain;
+// Author: Mikaeel Davids - 222590955
 
 import java.util.Objects;
 
