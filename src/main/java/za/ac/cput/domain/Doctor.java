@@ -1,4 +1,5 @@
 package za.ac.cput.domain;
+// Author: Muhamed Zubair Benny - 220527636
 
 import java.util.Objects;
 

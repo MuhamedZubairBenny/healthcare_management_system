@@ -1,4 +1,5 @@
 package za.ac.cput.domain;
+//Author: Duane Prins - 222706333
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

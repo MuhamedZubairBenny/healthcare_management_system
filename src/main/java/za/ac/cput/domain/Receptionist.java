@@ -1,11 +1,12 @@
-//Author : Imaan Sadien - 221752838
 package za.ac.cput.domain;
+//Author : Imaan Sadien - 221752838
+
 
 import java.util.Objects;
 
 
 public class Receptionist {
-    private String receptionistID;
+    public String receptionistID;
     private String receptionistName;
     private String receptionistSurname;
     private String receptionistNo;
@@ -57,13 +58,12 @@ public class Receptionist {
 
     @Override
     public String toString() {
-        return "Receptionist{" +
-                "receptionistID='" + receptionistID + '\'' +
-                ", receptionistName='" + receptionistName + '\'' +
-                ", receptionistSurname='" + receptionistSurname + '\'' +
-                ", receptionistNo='" + receptionistNo + '\'' +
-                ", receptionistEmail='" + receptionistEmail + '\'' +
-                '}';
+        return "Receptionist" + '\n' +
+                "Receptionist ID = " + receptionistID + '\n' +
+                "Receptionist Name = " + receptionistName + '\n' +
+                "Receptionist Surname = " + receptionistSurname + '\n' +
+                "Receptionist Number = " + receptionistNo + '\n' +
+                "Receptionist Email = " + receptionistEmail + '\n';
     }
 
     public static class Builder{

@@ -1,11 +1,10 @@
 package za.ac.cput.repository;
 
-public interface IRepository  <T, ID>{
+// Author: Muhamed Zubair Benny - 220527636
+
+public interface IRepository <T, ID> {
     T create (T t);
-
     T read (ID id);
-
     T update (T t);
-
     boolean delete (ID id);
 }

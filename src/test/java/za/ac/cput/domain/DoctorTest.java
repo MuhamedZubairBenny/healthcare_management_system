@@ -1,5 +1,7 @@
 package za.ac.cput.domain;
 
+// Author: Muhamed Zubair Benny - 220527636
+
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
