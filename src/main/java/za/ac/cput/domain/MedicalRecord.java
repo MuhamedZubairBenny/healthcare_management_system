@@ -1,10 +1,11 @@
 package za.ac.cput.domain;
+// Author: Isa Hassan - 222043555
 
 import java.util.Date;
 import java.util.Objects;
 
 public class MedicalRecord {
-    private String recordID;
+    public String recordID;
     private String patientID;
     private String doctorID;
     private String date;

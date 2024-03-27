@@ -1,11 +1,12 @@
-//Author : Imaan Sadien - 221752838
 package za.ac.cput.domain;
+//Author : Imaan Sadien - 221752838
+
 
 import java.util.Objects;
 
 
 public class Receptionist {
-    private String receptionistID;
+    public String receptionistID;
     private String receptionistName;
     private String receptionistSurname;
     private String receptionistNo;

@@ -1,15 +1,7 @@
 package za.ac.cput;
 
-import za.ac.cput.domain.Billing;
-import za.ac.cput.factory.BillingFactory;
-import za.ac.cput.domain.Doctor;
-import za.ac.cput.domain.MedicalRecord;
-import za.ac.cput.domain.Receptionist;
-import za.ac.cput.factory.ReceptionistFactory;
-import za.ac.cput.domain.Patient;
-import za.ac.cput.factory.DoctorFactory;
-import za.ac.cput.factory.MedicalRecordFactory;
-import za.ac.cput.factory.PatientFactory;
+import za.ac.cput.domain.*;
+import za.ac.cput.factory.*;
 
 
 public class Main {
@@ -98,7 +90,21 @@ public class Main {
         System.out.println(patient2.toString());
 
         Patient patient3 = PatientFactory.buildPatient("5S42D","Sharaad","Male",23,"0794532121");
-        System.out.println(patient3.toString());
+        System.out.println(patient3.toString()+"\n");
+
+        Appointment appointment1 = new Appointment.Builder().setAppointmentId("135928")
+                .setPatientId("246801")
+                .setDoctorId("135678")
+                .setAppointmentDate("09/02/2024")
+                .setAppointmentDuration("30 minutes").build();
+        System.out.println(appointment1.toString());
+
+        Appointment appointment2 = AppointmentFactory.buildAppointment("185436", "123456", "254367", "10/02/2024", "1 hour");
+        System.out.println(appointment2.toString());
+
+        Appointment appointment3 = AppointmentFactory.buildAppointment("435672", "765839", "11/02/2024", "45 minutes");
+        System.out.println(appointment3.toString());
+
 
     }
 }
