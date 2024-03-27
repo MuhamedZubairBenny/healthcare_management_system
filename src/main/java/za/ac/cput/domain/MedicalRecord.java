@@ -76,7 +76,7 @@ public class MedicalRecord {
     }
 
     public static class Builder {
-        private String recordID;
+        public String recordID;
         private String patientID;
         private String doctorID;
         private String date;
