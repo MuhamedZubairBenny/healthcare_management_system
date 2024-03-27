@@ -1,9 +1,10 @@
 package za.ac.cput.domain;
+//Author: Duane Prins - 222706333
 
 import java.util.Objects;
 
 public class Patient {
-    private String patientID;
+    public String patientID;
     private String name;
     private String gender;
     private int age;
