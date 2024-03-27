@@ -1,4 +1,5 @@
 package za.ac.cput.domain;
+// Author: Isa Hassan - 222043555
 
 import java.util.Date;
 import java.util.Objects;
